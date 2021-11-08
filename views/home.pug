@@ -1,0 +1,46 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+    section#introSection
+        div.heading Welcome to Akshay's Dance Academy
+        div.subheading Eat Sleep Dance Repeat
+    section#missionSection
+        h2 Our Mission
+        div.card-container
+            div.card
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img
+                        img(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdTG343u5qdEZwSb8NcRW4f4_DgsAVgHdx1w&usqp=CAU")
+                    div.card-content
+                        p This is the best dance academy of the universe
+
+            div.card
+                h3 Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src="https://www.pngall.com/wp-content/uploads/2/Dance-PNG.png")
+                    div.card-content
+                        p This is the best dance academy of the universe
+
+            div.card
+                h3 Expert Teaching
+                div.card-box
+                    div.card-img
+                        img(src="https://images.vexels.com/media/users/3/139619/isolated/preview/536a1a6496c10b1acdd46c5d38d0b15e-ballet-dancer-jump.png")
+                    div.card-content
+                        p This is the best dance academy of the universe
+    section#sponsorsSection
+                h2 Our Sponsors
+                div.sp-container
+                    img(src= "https://www.pngplay.com/wp-content/uploads/3/Apple-Logo-Transparent-Image.png", alt= "Sponsor Image", class= "spImage")
+                    img(src= "https://freepngimg.com/thumb/microsoft/28386-6-microsoft-logo-transparent-image.png", alt= "Sponsor Image", class= "spImage")
+                    img(src= "https://cdn.freebiesupply.com/images/large/2x/hewlett-packard-logo-png-transparent.png", alt= "Sponsor Image", class= "spImage")
+                    img(src= "http://assets.stickpng.com/images/580b57fcd9996e24bc43c535.png", alt= "Sponsor Image", class= "spImage")
